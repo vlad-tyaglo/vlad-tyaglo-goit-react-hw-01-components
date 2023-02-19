@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
-import { ProfileWrapper, UserDescription } from './Profile.styled';
+import { ProfileWrapper, UserDescription, UserStats, Item, UserImg } from './Profile.styled';
 
 export function Profile(props) {
     const { username, tag, location, avatar, stats: {followers, views, likes} } = props;
     return (
           <ProfileWrapper>
             <UserDescription>
-              <img
+              <UserImg
                 src={avatar}
                 alt="User avatar"
                 className="avatar"
@@ -16,20 +16,20 @@ export function Profile(props) {
               <p className="location">{location}</p>
             </UserDescription>
       
-            <ul className="stats">
-              <li>
+            <UserStats>
+              <Item>
                 <span className="label">{followers}</span>
                 <span className="quantity">1000</span>
-              </li>
-              <li>
+              </Item>
+              <Item>
                 <span className="label">{views}</span>
                 <span className="quantity">2000</span>
-              </li>
-              <li>
+              </Item>
+              <Item>
                 <span className="label">{likes}</span>
                 <span className="quantity">3000</span>
-              </li>
-            </ul>
+              </Item>
+            </UserStats>
           </ProfileWrapper>
         );
   };
