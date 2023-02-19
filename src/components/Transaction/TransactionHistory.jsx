@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export function TransactionHistory({items}){
     return (
         <table>
@@ -17,4 +19,8 @@ export function TransactionHistory({items}){
             </tbody>
         </table>
     );
+};
+
+TransactionHistory.propTypes = {
+    items: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string.isRequired))
 };

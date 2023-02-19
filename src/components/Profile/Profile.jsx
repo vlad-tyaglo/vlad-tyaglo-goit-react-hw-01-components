@@ -1,9 +1,11 @@
+import PropTypes from 'prop-types';
+import { ProfileWrapper, UserDescription } from './Profile.styled';
 
 export function Profile(props) {
     const { username, tag, location, avatar, stats: {followers, views, likes} } = props;
     return (
-          <div className="profile">
-            <div className="description">
+          <ProfileWrapper>
+            <UserDescription>
               <img
                 src={avatar}
                 alt="User avatar"
@@ -12,7 +14,7 @@ export function Profile(props) {
               <p className="name">{username}</p>
               <p className="tag">@{tag}</p>
               <p className="location">{location}</p>
-            </div>
+            </UserDescription>
       
             <ul className="stats">
               <li>
@@ -28,8 +30,13 @@ export function Profile(props) {
                 <span className="quantity">3000</span>
               </li>
             </ul>
-          </div>
+          </ProfileWrapper>
         );
   };
 
-  
+  Profile.propTypes = {
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    stats: PropTypes.objectOf(PropTypes.number.isRequired),
+  };
