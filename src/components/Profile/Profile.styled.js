@@ -3,11 +3,12 @@ import styled from "styled-components";
 
 export const ProfileWrapper = styled.div`
 width: 400px;
-border-radius: 10px;
+border-radius: 5px;
 font-weight: 500;
 font-size: 24px;
-box-shadow: 5px 5px 8px 1px rgba(112, 111, 111, 1);
+border: 1px solid #9faab6;
 background-color: white;
+margin-bottom: 50px;
 `;
 
 export const UserDescription = styled.div`
