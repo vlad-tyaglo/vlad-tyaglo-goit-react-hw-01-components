@@ -21,7 +21,7 @@ export const UserStats = styled.ul`
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   color: #9faab6;
-  background-color: #f4f6f9
+  background-color: #f4f6f9;
 `;
 
 export const Item = styled.li`
