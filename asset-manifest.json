@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/vlad-tyaglo-goit-react-hw-01-components/static/css/main.7acaea2f.css",
+    "main.js": "/vlad-tyaglo-goit-react-hw-01-components/static/js/main.1ede2809.js",
+    "index.html": "/vlad-tyaglo-goit-react-hw-01-components/index.html",
+    "main.7acaea2f.css.map": "/vlad-tyaglo-goit-react-hw-01-components/static/css/main.7acaea2f.css.map",
+    "main.1ede2809.js.map": "/vlad-tyaglo-goit-react-hw-01-components/static/js/main.1ede2809.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.1ede2809.js"
+  ]
+}
